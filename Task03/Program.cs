@@ -36,3 +36,4 @@ else
     {
     Console.WriteLine("Некорректный ввод");
     }
+//можно сделать через строки: case и break
