@@ -6,5 +6,13 @@
 918 -> 8*/
 Console.WriteLine("Введите натуральное трехзначное число");
 int num = Convert.ToInt32(Console.ReadLine());
-int lastdigit = num %10;
+if (num < 0) num *= -1;
+if (num >= 100&&num <=999)
+    {
+    int lastdigit = num % 10;
 Console.WriteLine($"Последняя цифра числа {num} это {lastdigit}");
+    }
+else
+    {
+    Console.WriteLine("Некорректный ввод");
+    }
