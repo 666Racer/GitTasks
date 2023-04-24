@@ -12,3 +12,4 @@ int digit2 = num % 10;
 
 if (digit1 > digit2) Console.WriteLine($"Наибольшая цифра числа {num} это {digit1}");
 else Console.WriteLine($"Наибольшая цифра числа {num} это {digit2}");
+//int maxDigit = digit 1 > digit2 ? digit1 : digit2
