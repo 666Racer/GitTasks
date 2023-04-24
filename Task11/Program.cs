@@ -6,12 +6,6 @@
 782 -> 72
 918 -> 98
 */
-int number = new Random().Next(100, 1000); //(10. (999 + 1))
-Console.WriteLine($"Случайное трёхзначное число -> {number}");
-
-int result = DeleteDigit2 (number);
-Console.WriteLine($"При удалении второй цифры из числа {number} получаем число {result}");
-
 int DeleteDigit2 (int num) //num = number
 {
     int digit1 = num / 100; //получаем первую цифру
@@ -19,3 +13,9 @@ int DeleteDigit2 (int num) //num = number
     int result = digit1 * 10 + digit3; //получаем число без второй цифры
     return result; //возвращаем результат
 }
+
+int number = new Random().Next(100, 1000); //(10. (999 + 1))
+Console.WriteLine($"Случайное трёхзначное число -> {number}");
+
+int result = DeleteDigit2 (number);
+Console.WriteLine($"При удалении второй цифры из числа {number} получаем число {result}");
