@@ -18,5 +18,5 @@ string CoordinateQuarter (string quart)
     if (quart == "2") return "x = (-oo;0]; y = [0;+oo)";
     if (quart == "3") return "x = (-oo;0]; y = (-oo;0]";
     if (quart == "4") return "x = [0;+oo); y = (-oo;0]";
-    return null;
+    return null; //можно сравнивать не с числои, а с "Один", "Два" и т.д.
 }
