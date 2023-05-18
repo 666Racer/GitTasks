@@ -20,7 +20,10 @@ int Factorial(int num)
     int fact = 1;
     for (int i = 1; i <= num; i++)
     {
-        fact = fact * i;
+        checked
+        {
+            fact = fact * i;
+        }
     }
     return fact;
 }
