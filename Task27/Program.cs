@@ -6,21 +6,21 @@
 5 -> 120
 */
 
-Console.WriteLine ("Введите натуральное число N");
+Console.WriteLine("Введите натуральное число N");
 int numberN = Convert.ToInt32(Console.ReadLine());
-if (numberN <=0) Console.WriteLine ("Введено не натуральное число");
+if (numberN <= 0) Console.WriteLine("Введено не натуральное число");
 else
 {
-int factorial = Factorial (numberN);
-Console.WriteLine ($"Факториал числа {numberN} равен {factorial}");
+    int factorial = Factorial(numberN);
+    Console.WriteLine($"Факториал числа {numberN} равен {factorial}");
 }
 
-int Factorial (int num)
+int Factorial(int num)
 {
     int fact = 1;
     for (int i = 1; i <= num; i++)
     {
-        fact = fact*i;
+        fact = fact * i;
     }
     return fact;
 }
