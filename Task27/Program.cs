@@ -1,29 +1,26 @@
 ﻿/*
-Задача 28: Напишите программу, которая
-принимает на вход число N и выдаёт
-произведение чисел от 1 до N.
-4 -> 24
-5 -> 120
+Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+452 -> 11
+82 -> 10
+9012 -> 12
 */
 
-Console.WriteLine("Введите натуральное число N");
-int numberN = Convert.ToInt32(Console.ReadLine());
-if (numberN <= 0) Console.WriteLine("Введено не натуральное число");
-else
+Console.WriteLine ("Введите целое число:");
+int number = Convert.ToInt32(Console.ReadLine());
+if (number < 0) number *= -1;
+
+int sumDigits (int num)
 {
-    int factorial = Factorial(numberN);
-    Console.WriteLine($"Факториал числа {numberN} равен {factorial}");
+    int sum = 0;
+    while (num > 0)
+    {
+        sum += num % 10;
+        num/= 10;  //избавляеся от одного разряда
+    }
+    int result = sum; //получаем сумму цифр в числе
+    return result; //возвращаем результат
 }
 
-int Factorial(int num)
-{
-    int fact = 1;
-    for (int i = 1; i <= num; i++)
-    {
-        checked
-        {
-            fact = fact * i;
-        }
-    }
-    return fact;
-}
+int sumofdigits = sumDigits(number); //присваиваем переменной значение result из цикла
+
+Console.WriteLine ($"Сумма цифр в числе {number} равно {sumofdigits}");
