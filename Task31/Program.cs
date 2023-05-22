@@ -28,7 +28,7 @@ void PrintArray(int[] arr, string sep)
     }
 }
 
-int [] GetSumPositiveNegativeElem(int [] arr)
+int [] GetSumPositiveNegativeElem(int [] arr)//можно разбить на 2 int метода
 {
     int sumPositive = 0;
     int sumNegative = 0;
@@ -47,3 +47,37 @@ Console.WriteLine("]");
 int[] sumPositiveNegativeElem = GetSumPositiveNegativeElem (array);
 Console.WriteLine ($"Сумма положительных элементов равна {sumPositiveNegativeElem[0]}");
 Console.WriteLine ($"Сумма отрицательных элементов равна {sumPositiveNegativeElem[1]}");
+
+/*
+int GetSumPositiveElem(int[] arr)
+{
+    int sum = 0;
+
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if(arr[i] > 0) sum += arr[i];
+    }
+    return sum;
+}
+
+int GetSumNegativeElem(int[] arr)
+{
+    int sum = 0;
+
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if(arr[i] < 0) sum += arr[i];
+    }
+    return sum;
+}
+
+int[] array = CreateArrayRndInt(12, -9, 9);
+Console.Write("[");
+PrintArray(array, ",");
+Console.WriteLine("]");
+
+int sumPositiveElem = GetSumPositiveElem(array);
+int sumNegativeElem = GetSumNegativeElem(array);
+Console.WriteLine($"Cумма положительных элементов равна {sumPositiveElem}");
+Console.WriteLine($"Cумма отрицательных элементов равна {sumNegativeElem}");
+*/
