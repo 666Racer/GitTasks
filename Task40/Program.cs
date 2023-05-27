@@ -15,8 +15,7 @@ int AC = Convert.ToInt32(Console.ReadLine());
 
 bool CheckTriangle (int ab, int bc, int ac)
 {
-    if (ab < (bc + ac) && bc < (ab + ac) && ac < (ab + bc)) return true;
-    return false;
+    return (ab < (bc + ac) && bc < (ab + ac) && ac < (ab + bc)); //короткая запись без if, true, false
 }
 
 bool checkTriangle = CheckTriangle (AB, BC, AC);
