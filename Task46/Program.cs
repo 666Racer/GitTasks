@@ -26,7 +26,7 @@ void PrintMatrix(int[,] matrix)
 {
     for (int i = 0; i < matrix.GetLength (0); i ++) 
     {
-        //Console.Write ("|");
+        //Console.Write ($"| {i}"); //номер строки i
         for (int j = 0; j < matrix.GetLength (1); j++) 
         {
             Console.Write($"{matrix[i, j], 5} "); // 5 - форматирвоание отступа
