@@ -38,7 +38,7 @@ void PrintMatrix(int[,] matrix)
 
 double[] CreateArrayWithColumnsArithmeticalMeans(int[,] matrix)
 {
-    double[] array = new double[matrix.GetLength(1)];
+    double[] mass = new double[matrix.GetLength(1)];
     double numberOfColumns = Convert.ToDouble(matrix.GetLength(1));
     for (int j = 0; j < matrix.GetLength(1); j++)
     {
@@ -47,9 +47,9 @@ double[] CreateArrayWithColumnsArithmeticalMeans(int[,] matrix)
         {
             sum += matrix[i, j];
         }
-        array[j] = Math.Round(sum/numberOfColumns, 2);
+        mass[j] = Math.Round(sum/numberOfColumns, 2);
     }
-    return array;
+    return mass;
 }
 
 void PrintArray(double[] arr, string sep)
