@@ -49,8 +49,12 @@ void IndexOfMatrixRowWithMinSum (int[,] matrix)
         for (int j = 0; j < matrix.GetLength (1); j++) 
         {
             rowSumNew += matrix [i,j];
+            //Console.WriteLine (rowSumNew);
         }
         if (rowSumNew < rowSum) rowMinSumIndex = i;
+        rowSumNew = 0;
+        
+        //if (rowSumNew < rowSum) rowMinSumIndex = i;
     }
     Console.WriteLine ($"Минимальная сумма элементов в {rowMinSumIndex} строке");
 }
