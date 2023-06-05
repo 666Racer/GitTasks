@@ -64,7 +64,8 @@ int indexrows = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine ("Введите индекс столбца элемента");
 int indexcolumns = Convert.ToInt32(Console.ReadLine());
 
-
+if (indexrows < 0 || indexcolumns < 0)
+Console.WriteLine ("Неверно введена позиция");
 
 int[,] array2d = CreatewMatrixRndInt (Nrows, Ncolumns, minimum, maximum); //лучше пользовательский ввод
 PrintMatrix(array2d);
