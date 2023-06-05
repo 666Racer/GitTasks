@@ -77,21 +77,21 @@ int minimum1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine ("Введите максимальное целое число диапазона первой матрицы");
 int maximum1 = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine ("Введите количество строк первой матрицы");
-int Nrows1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine ("Введите количество столбцов первой матрицы");
-int Ncolumns1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine ("Введите количество строк второй матрицы");
+int Nrows2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine ("Введите количество столбцов второй матрицы");
+int Ncolumns2 = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine ("Введите минимальное целое число диапазона первой матрицы");
-int minimum1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine ("Введите максимальное целое число диапазона первой матрицы");
-int maximum1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine ("Введите минимальное целое число диапазона второй матрицы");
+int minimum2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine ("Введите максимальное целое число диапазона второй матрицы");
+int maximum2 = Convert.ToInt32(Console.ReadLine());
 */
 
-int[,] firstMatr = CreatewMatrixRndInt (2,3,0,10/*Nrows, Ncolumns, minimum, maximum*/); //пользовательский ввод
+int[,] firstMatr = CreatewMatrixRndInt (2,3,0,10/*Nrows1, Ncolumns1, minimum1, maximum1*/); //пользовательский ввод
 PrintMatrix(firstMatr);
 Console.WriteLine();
-int[,] secondMatr = CreatewMatrixRndInt (3,2,0,10/*Nrows, Ncolumns, minimum, maximum*/); //пользовательский ввод
+int[,] secondMatr = CreatewMatrixRndInt (3,2,0,10/*Nrows2, Ncolumns2, minimum2, maximum2*/); //пользовательский ввод
 PrintMatrix(secondMatr);
 
 if (CheckMatrixCompatibility(firstMatr, secondMatr)) MatrixMultiplicity (firstMatr, secondMatr);
