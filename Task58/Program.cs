@@ -39,12 +39,12 @@ bool CheckMatrixCompatibility (int[,] firstMatrix, int[,] secondMatrix)
 {
     if (firstMatrix.GetLength (1) == secondMatrix.GetLength (0))
         {
-        Console.WriteLine("Матрицы совместимы");
+        Console.WriteLine("Матрицы совместимы"); // вынести из метода
         return true;
         }
     else
         {
-        Console.WriteLine("Матрицы не совместимы");
+        Console.WriteLine("Матрицы не совместимы"); // вынести из метода
         return false;
         }
 }
