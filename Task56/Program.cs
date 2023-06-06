@@ -59,7 +59,7 @@ void IndexOfMatrixRowWithMinSum (int[,] matrix)
         }
         rowSumNew = 0;
     }
-    Console.WriteLine ($"Минимальная сумма элементов в {rowMinSumIndex} строке");
+    Console.WriteLine ($"Минимальная сумма элементов в {rowMinSumIndex} строке"); //вывод лучше вне метода
 }
 
 /*Console.WriteLine ("Введите количество строк");
