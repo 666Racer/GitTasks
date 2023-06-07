@@ -7,7 +7,10 @@ N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 Console.WriteLine("Введите натуральное число");
 int number = Convert.ToInt32(Console.ReadLine());
 
+if (number > 0)
 NaturalNumbersRec(number);
+else
+Console.WriteLine ($"Число {number} не является натуральным");
 
 void NaturalNumbersRec(int num)
 {
