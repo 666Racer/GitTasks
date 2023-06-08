@@ -9,8 +9,12 @@ int numberM = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите натуральное число N");
 int numberN = Convert.ToInt32(Console.ReadLine());
 
-int ackermann = Ackermann (numberM, numberN);
-Console.WriteLine($"Фунция Аккермана от чисел ({numberM}; {numberN}) равно {ackermann}");
+if (numberM >= 0 && numberN >= 0)
+{
+    int ackermann = Ackermann (numberM, numberN);
+    Console.WriteLine($"Фунция Аккермана от чисел ({numberM}; {numberN}) равно {ackermann}");
+}
+else Console.WriteLine("Числа M и N должны быть больше 0");
 
 
 int Ackermann (int m, int n)
