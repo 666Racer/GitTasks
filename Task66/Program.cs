@@ -25,14 +25,13 @@ int SumOfNaturalNumbersInInterval(int m, int n)
         ///Console.Write($"{m} ");
         return m + SumOfNaturalNumbersInInterval(m-1, n);
     }
-        else if (m < n)
+        if (m < n)
     {
         //Console.Write($"{m} ");
         return m + SumOfNaturalNumbersInInterval(m+1, n);
     }
-    else
-    {
+    
         //Console.Write($"{m} ");
         return m;
-    }
+    
 }
